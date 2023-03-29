@@ -1,0 +1,22 @@
+Reinforcement-Learning-for-Maintaining-Customer-Loyalty
+
+This project addresses the problem of customer loyalty management, where the goal is to maintain and improve the loyalty degree of a customer base over time. The model assumes the problem as a reinforcement learning task, where the states correspond to different loyalty degrees of the customers, and the actions represent the strategies that the company can adopt to influence their loyalty.
+
+Specifically, 8 states are described as follows:
+•	None: This state represents users who are not customers of the company yet.
+•	Potential: Users who have shown interest in the company's products or services but have not made a purchase yet.
+•	Low Loyalty: New customers with low levels of loyalty.
+•	Medium Loyalty: Customers who have purchased multiple products or services and have a moderate level of loyalty.
+•	High Loyalty: Customers who have purchased many products or services and have a high level of loyalty.
+•	Former/Decline Loyalty: This state represents previously high-loyalty customers who have started to become less loyal to the company.
+•	Churned: Customers who have completely stopped using the company's products or services, but could potentially return.
+•	Inactive: Customers who have made a purchase in the past but have not used the company's products or services for a significant amount of time.
+
+In addition, description of 3 actions:
+•	Support: This action involves reinvesting customer money to enhance their experience with the company.
+•	Partial Support: This action involves reinvesting some of the customer's money to improve their experience, while the remaining amount is saved in the company's bank account.
+•	Charge: This action involves saving all of the customer's money in the company's bank account. 
+
+
+Note: The model formulation is done using Python. Value iteration is used to solve Markov Decision Process. To validate results Q-learning (a model-free reinforcement learning algorithm) is used. 
+Value iteration computes the optimal value function of each state by iteratively updating its estimate based on the Bellman equation, while Q-learning learns the optimal Q-function that estimates the expected reward of taking an action in a given state and following the optimal policy thereafter.
